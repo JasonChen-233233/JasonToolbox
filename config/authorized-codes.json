@@ -1,14 +1,14 @@
 [
   {
-    "device_id": "88106B93C1F0687B",
-    "expire_date": "2026-07-21",
-    "activate_code": "2026-07-21|88106B93C1F0687B|60B36377",
-    "activated_at": "2026-07-19"
-  },
-  {
     "device_id": "F96D06561FF4B8FB",
     "expire_date": "2026-07-20",
     "activate_code": "2026-07-20|F96D06561FF4B8FB|C95A66DC",
+    "activated_at": "2026-07-19"
+  },
+  {
+    "device_id": "88106B93C1F0687B",
+    "expire_date": "2026-07-19",
+    "activate_code": "2026-07-19|88106B93C1F0687B|8DE75DAD",
     "activated_at": "2026-07-19"
   }
 ]
