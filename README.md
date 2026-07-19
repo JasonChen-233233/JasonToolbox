@@ -1,5 +1,7 @@
 # 杰哥电商设计工具箱 — 服务端配置仓库
 
+仓库地址：https://github.com/JasonChen-233233/JasonToolbox
+
 此仓库用于存储杰哥电商设计工具箱客户端所需的配置文件，通过 jsdelivr CDN 加速访问。
 
 ## 仓库结构
@@ -16,8 +18,8 @@ config/
 
 客户端通过 jsdelivr CDN 访问配置文件（国内可直连）：
 
-- 主源：`https://cdn.jsdelivr.net/gh/{用户名}/{仓库名}@main/config/{文件名}.json`
-- 备用源：`https://raw.githubusercontent.com/{用户名}/{仓库名}/main/config/{文件名}.json`
+- 主源：`https://cdn.jsdelivr.net/gh/JasonChen-233233/JasonToolbox@main/config/{文件名}.json`
+- 备用源：`https://raw.githubusercontent.com/JasonChen-233233/JasonToolbox/main/config/{文件名}.json`
 
 ## 各文件说明
 
@@ -63,6 +65,7 @@ config/
 
 ## 注意事项
 
+- 仓库必须为 **Public**（公开），否则 jsdelivr CDN 和 raw.githubusercontent.com 无法访问
 - jsdelivr CDN 有 10-15 分钟缓存，推送后不会立即生效
-- 如需立即生效，可访问 `https://purge.jsdelivr.net/gh/{用户名}/{仓库名}@main/config/{文件名}.json` 刷新缓存
-- `authorized-codes.json` 包含授权信息，建议仓库设为 Private（jsdelivr 支持私有仓库但需配置 token）
+- 如需立即生效，可访问 `https://purge.jsdelivr.net/gh/JasonChen-233233/JasonToolbox@main/config/{文件名}.json` 刷新缓存
+- `authorized-codes.json` 中的授权码不含密钥（HMAC 密钥仅存在于开发者本地的 `gen_auth_code.py`），公开仓库是安全的
